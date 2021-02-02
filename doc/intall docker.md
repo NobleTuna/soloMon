@@ -20,6 +20,10 @@
 ### docker compose 설치 (1.28.2)
 `sudo curl -L https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose`
 
+
+*릴리즈 버전 확인 - https://github.com/docker/compose/releases*
+
+
 ### docker compose 실행권한 추가
 `sudo chmod +x /usr/local/bin/docker-compose`
 
