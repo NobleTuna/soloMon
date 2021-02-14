@@ -31,3 +31,19 @@
 `docker-compose version`
 
 <br>
+
+
+### docker 접속
+` docker exec -it 87c457013bd5 /bin/bash`
+` docker exec -it 87c457013bd5 /bin/sh`
+` docker exec -it 87c457013bd5 sh`
+
+### container 로그
+`docker logs --tail 50 --follow --timestamps 87c457013bd5`
+
+
+### docker image 삭제
+`docker rmi 18e4b21eb324`
+
+### repository 혹은 tag 가 <none> 인 이미지 삭제
+`docker rmi $(docker images -q --filter "dangling=true")`
